@@ -5,6 +5,7 @@ https://sushmithavootukuri.medium.com/copy-by-value-for-a-composite-data-type-in
 
 2) Difference between HTTP1.1 vs HTTP2 - - publish as a blog in medium 
 
+https://sushmithavootukuri.medium.com/http1-1-vs-http2-f2428518d71d
 
 
 3) why there is a difference in behavior for copying contents in primitive and non primitive type? - publish as a blog in medium. 
