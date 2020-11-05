@@ -1,0 +1,24 @@
+1) How do you copy by value a composite data type? - publish as a blog in medium 
+
+https://sushmithavootukuri.medium.com/copy-by-value-for-a-composite-data-type-in-javascript-26e5d7997a1c
+
+
+2) Difference between HTTP1.1 vs HTTP2 - - publish as a blog in medium 
+
+
+
+3) why there is a difference in behavior for copying contents in primitive and non primitive type? - publish as a blog in medium. 
+
+https://sushmithavootukuri.medium.com/why-primitive-values-are-assigned-by-value-and-non-primitive-values-by-reference-in-javascript-fb90137d2be1
+
+
+
+4) Write a blog about objects and its internal representation in Javascript in medium. 
+
+https://sushmithavootukuri.medium.com/internal-representation-of-objects-in-javascript-d25b6aa30608
+
+
+ 
+5) What is the difference between window, screen, and document in Javascript? - publish as a blog in medium.
+
+https://sushmithavootukuri.medium.com/difference-between-window-document-and-screen-in-javascript-757a65b25e9a
