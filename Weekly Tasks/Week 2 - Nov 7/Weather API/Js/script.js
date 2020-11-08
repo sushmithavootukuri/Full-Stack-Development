@@ -1,5 +1,6 @@
 const API_KEY = 'd4da12f58838abe77e5f1c5f9e407d28';
 
+//Gets all the countries from rest countries API
 getWeatherReport=(type)=> {
     const REST_COUNTRIES_URL = 'https://restcountries.eu/rest/v2/all';
     let request = new XMLHttpRequest();
@@ -14,7 +15,7 @@ getWeatherReport=(type)=> {
     }
     }
 
-
+//Invokes openWeatherAPI by city for each country 
 displayCountriesWeatherByCity = (countries)=> {
     countries.forEach(country => {
         let weatherAPI = 'http://api.openweathermap.org/data/2.5/weather?q=' + country.capital + '&appid=' + API_KEY;
@@ -22,7 +23,7 @@ displayCountriesWeatherByCity = (countries)=> {
     });
 }
 
-
+//invokes openWeatherAPI by geographic location for each country
 displayCountriesWeatherByLocation = (countries) => {
     countries.forEach(country => {
         let weatherAPI = 'http://api.openweathermap.org/data/2.5/weather?lat=' + country.latlng[0] + '&lon=' + country.latlng[1] + '&appid=' + API_KEY;
@@ -30,6 +31,7 @@ displayCountriesWeatherByLocation = (countries) => {
     });
 }
 
+//Requests weatherAPI and Prints weather information in the console
  weatherResponseByAPI = (weatherAPI) =>{
     let request = new XMLHttpRequest();
     request.open('GET', weatherAPI, true);
@@ -45,7 +47,7 @@ displayCountriesWeatherByLocation = (countries) => {
   }
 
 
-/* Function to creates rows dynamically for displaying weather information
+/* Function to create rows dynamically for displaying weather information
 function createRows(city, temperature, description) {
     var table = document.getElementById("table");
     table.style.display = 'block';
