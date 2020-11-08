@@ -1,0 +1,12 @@
+body{
+    background-color :lightsteelblue;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5%;
+}
+
+button{
+   border-style: double;
+   font-weight: bold;
+   padding: 1%;
+}
