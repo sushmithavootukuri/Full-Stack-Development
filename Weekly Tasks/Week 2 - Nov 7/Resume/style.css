@@ -1,0 +1,53 @@
+body{
+    font-size: 17px;
+    font-family: sans-serif;
+    margin: 1% 20% 10% 15%;
+    }
+
+    .container{
+   
+    background-color :rgb(240, 245, 245);
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 10px;
+    }
+
+    td{
+    padding: 3px;
+    }
+
+    table{
+  
+    text-align: left;
+    width: 100%;
+    }
+
+    .section{
+    border-bottom: 2px solid rgb(211, 211, 211);
+    padding: 7px;
+    }
+
+    .declaration{
+    border-bottom: none;
+    }
+
+    #header{
+    text-align: center;
+    font-size: larger;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 10px;
+    background-color:lightseagreen
+    }
+
+    #name {
+    font-weight: bold;
+    font-size: 25px;
+    color:white
+    }
+
+    ol {
+    list-style-type: none;
+    }
+
+    li{
+    padding : 4px;
+    }
