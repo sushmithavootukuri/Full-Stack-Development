@@ -1,0 +1,93 @@
+*{
+    font-family:  sans-serif;
+    }
+body{
+    width: 65%;
+ margin-left: 18%;
+}
+div.main{
+    background-color: grey;
+    width: 100%;
+    height: 300px;
+}
+div.sub-main{
+    background-color : white;
+
+    width: 100%;
+    height: 30px;
+    position: relative;
+    top : 30px;
+    opacity: 0.9; 
+}
+
+h1#name {
+        
+    width: 280px;
+    background-color:rgb(235, 200, 45);
+    padding: 1.5%;
+    color: rgba(0, 0, 0, 0.808);
+     border-radius: 8px;
+     font-size: 200%;
+    font-stretch: condensed;
+     text-align: center;
+     position: relative;
+    bottom: 25px;
+    left : 37%;
+   
+  }
+
+  img.profile{
+      border-radius: 50%;
+      border: 5px dotted rgb(235, 200, 45);
+      height: 150px;
+      width: 150px;
+      position: relative;
+     left:45%;
+     top:50px;
+      }
+
+  p.address{
+     text-align: center;
+  }
+ table{
+     width: 100%;
+    
+ }
+ td.main{
+      padding: 40px;
+    }
+ td{
+    width: 50%;
+    padding: 0px;
+    word-wrap: break-word;
+ }
+ 
+ td.first {
+      border-right: 2px solid grey;
+     
+ }
+ h2.sectionHeading{
+    color: grey;
+    padding-left: 60px;
+    padding-top: 8px;
+    position: relative;
+ }
+ img.icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px dotted rgb(235, 200, 45);
+    float: left;
+ }
+
+ .sectionContent{
+      color: rgba(0, 0, 0, 0.719);
+ }
+ h4.sub-heading{
+     text-align : center;
+    
+     }
+h4{
+   color: rgba(0, 0, 0, 0.836);
+
+ }
