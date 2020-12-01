@@ -68,9 +68,16 @@ td{
     width: 50%;
     padding: 0px;
     word-wrap: break-word;
+    
 }
 .first {
     border-right: 1.5px solid grey;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
 }
 .section-heading{
     color: rgb(94, 92, 92);
