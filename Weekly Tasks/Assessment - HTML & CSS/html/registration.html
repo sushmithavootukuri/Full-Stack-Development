@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <script src="https://kit.fontawesome.com/1e42f110fd.js"></script>
+    <link rel="stylesheet" href="../css/registration.css">
+    <script>
+        function submitted() {
+            alert("Thanks for Submitting");
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="main">
+        <form onsubmit="submitted()" method="post">
+            <div class="row">
+                <div class="col-50">
+                    <label for="fullName">Full Name </label>
+                </div>
+                <div class="col-50">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required></input>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-50">
+                    <label for="address1">Address Line 1 </label>
+                </div>
+                <div class="col-50">
+                    <i class="far fa-address-book"></i>
+                    <input type="text" id="address1" name="address1" placeholder="Address Line 1" required></input>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-50">
+                    <label for="address2">Address Line 2 </label>
+                </div>
+                <div class="col-50">
+                    <i class="far fa-address-book"></i>
+                    <input type="text" id="address2" name="address2" placeholder="Address Line 2" required></input>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-50">
+                    <label for="city">City </label>
+                </div>
+                <div class="col-50">
+                    <i class="far fa-building"></i>
+                    <input type="text" id="city" name="city" placeholder="City" required></input>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-50">
+                    <label for="state">State/Province/Region </label>
+                </div>
+                <div class="col-50">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="state" name="state" placeholder="State/Province/Region" required></input>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-50">
+                    <label for="zip">Postal Code/ZIP </label>
+                </div>
+                <div class="col-50">
+                    <i class="far fa-envelope-open"></i>
+                    <input type="number" id="zip" name="zip" placeholder="Postal Code/ZIP" required></input>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-50">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-50">
+                    <i class="far fa-map"></i>
+                    <select id="country" name="country">
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Cook Islands">Cook Islands</option>
+                        <option value="Estonia">Estonia</option>
+                        <option value="Guinea-bissau">Guinea-bissau</option>
+                        <option value="India">India</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-50">
+                    <label for="email">Email </label>
+                </div>
+                <div class="col-50">
+                    <i class="fas fa-user"></i>
+                    <input type="email" id="email" name="email" placeholder="Email" required></input>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-50">
+                    <label for="phone">Phone Number </label>
+                </div>
+                <div class="col-50">
+                    <i class="fas fa-user"></i>
+                    <input type="phone" id="phone" name="phone" placeholder="Phone Number" required></input>
+                </div>
+
+            </div>
+            <div class="row center">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
