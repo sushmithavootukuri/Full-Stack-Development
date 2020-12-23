@@ -5,10 +5,11 @@ const createAndAppendElement = (tag, className, parentTag) => {
     parentTag ? parentTag.append(element) : false;
     return element;
 };
+
 let container = createAndAppendElement("div", "container");
 let row = createAndAppendElement("div", "row", container);
 let col = createAndAppendElement("div", "col-12", row);
-let websitename = createAndAppendElement("h1", "text-center m-3", col).innerText = "Weather Studio"
+let websitename = createAndAppendElement("h1", "text-center m-3 display-3", col).innerText = "Weather Studio"
 const createCard = (country) => {
     let col = createAndAppendElement("div", "col-sm-6  col-lg-4", row);
     let card = createAndAppendElement("div", "card mx-md-2 my-4 text-center", col);
@@ -18,8 +19,8 @@ const createCard = (country) => {
     let capital = createAndAppendElement("p", "card-text mb-0", cardBody);
     let region = createAndAppendElement("p", "card-text mb-0", cardBody);
     let code = createAndAppendElement("p", "card-text mb-0", cardBody);
-    let latlng = createAndAppendElement("p", "card-text mb-0", cardBody);
-    let weatherButton = createAndAppendElement("button mb-0", "btn btn-primary", cardBody);
+    let latlng = createAndAppendElement("p", "card-text", cardBody);
+    let weatherButton = createAndAppendElement("button", "btn btn-primary", cardBody);
     cardHeader.innerText = country.name;
     cardImg.src = country.flag;
     cardImg.alt = `${country.name} flag img`;
@@ -33,10 +34,10 @@ const createCard = (country) => {
         var close = document.querySelector(".close-btn");
         close.onclick = () => {
             document.querySelector(".popup").style.display = "none";
-            document.querySelector(".content h3").innerText = "Loading...";
         }
     }
 }
+
 const displayCountries = async () => {
     const REST_COUNTRIES_URL = 'https://restcountries.eu/rest/v2/all';
     try {
@@ -47,10 +48,12 @@ const displayCountries = async () => {
             createCard(country);
         });
     } catch (error) {
+        console.log(error)
         createAndAppendElement("span", "h5 text-danger text-center", col).innerText = "Service down !! Try later  ";
     }
 }
 displayCountries();
+
 const displayWeather = async (country) => {
     const API_KEY = "c61fe78e67162f1be463481d1ce92844";
     const OW_BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
@@ -73,6 +76,7 @@ const displayWeather = async (country) => {
         description.innerText = "Error : " + error;
     }
 }
+
 var popup = createAndAppendElement("div", "popup");
 var content = createAndAppendElement("div", "content", popup);
 var countryName = createAndAppendElement("span", "h3 pt-3", content);
@@ -85,4 +89,5 @@ var pressure = createAndAppendElement("p", "m-0", content);
 var humidity = createAndAppendElement("p", "m-0", content);
 var closeButton = createAndAppendElement("button", "close-btn btn btn-primary mt-3", content);
 closeButton.innerText = "Close";
+
 document.body.append(container, popup);
